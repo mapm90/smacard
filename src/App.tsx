@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Download, Cloud, Github, DownloadIcon } from 'lucide-react';
-
+import unidos from './medias/unidos.png';
+import picatextos from './medias/logo picatextos.png';
+import original from './medias/original.png';
+import convertido from './medias/convertido.png';
 const images = [
-  'src/medias/logo picatextos.png',
-  'src/medias/original.png',
-  'src/medias/convertido.png',
-  'src/medias/unidos.png'
+  picatextos, original, convertido, unidos
 ];
 
 function App() {
