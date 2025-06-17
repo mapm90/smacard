@@ -92,7 +92,7 @@ function App() {
         {/* Description Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-6 leading-tight">
-            Descubre Nuestra App
+            Descubre Nuestra Apps
           </h1>
           <div className="space-y-5 max-w-3xl mx-auto text-xl md:text-2xl text-gray-700 font-light leading-relaxed">
             <p className="flex items-center gap-2">
