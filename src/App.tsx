@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Download, Cloud } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Download, Cloud, Github, DownloadIcon } from 'lucide-react';
 
 const images = [
-  'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
-  'https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800',
-  'https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=800',
-  'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-  'https://images.pexels.com/photos/374074/pexels-photo-374074.jpeg?auto=compress&cs=tinysrgb&w=800'
+  'src/medias/logo picatextos.png',
+  'src/medias/original.png',
+  'src/medias/convertido.png',
+  'src/medias/unidos.png'
 ];
 
 function App() {
@@ -95,23 +94,68 @@ function App() {
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-6 leading-tight">
             Descubre Nuestra App
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-4 font-light leading-relaxed max-w-3xl mx-auto">
-            Una experiencia única diseñada para simplificar tu vida digital. 
-            Funcionalidades avanzadas, diseño elegante y rendimiento excepcional.
-          </p>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Únete a miles de usuarios que ya han transformado su forma de trabajar 
-            con nuestra innovadora aplicación.
+          <div className="space-y-5 max-w-3xl mx-auto text-xl md:text-2xl text-gray-700 font-light leading-relaxed">
+            <p className="flex items-center gap-2">
+              <span className="text-2xl">😜</span>
+              <span>No es un disparate, es puro arte <span className="font-semibold text-indigo-600">(del bueno)</span></span>
+            </p>
+            <p className="bg-indigo-50 rounded-xl px-5 py-3 shadow-sm border-l-4 border-indigo-400 italic">
+              Sabemos lo que vas a decir:<br />
+              <span className="text-indigo-700 font-medium">"¡Pero eso que escribes parece un disparate, faltan letras por todos lados!"</span>
+            </p>
+            <p className="flex items-center gap-2">
+              <span className="text-2xl">👉</span>
+              <span>
+                Y aquí te respondemos: <span className="font-semibold text-purple-600">tranquilo, no es falta de ortografía, es optimización con flow.</span>
+              </span>
+            </p>
+            <p>
+              Nuestra app <span className="font-semibold text-blue-600">acorta tus SMS</span> eliminando lo que no hace falta, sin que pierdan sentido.
+              <br />
+              <span className="text-gray-500">Sí, puede parecer loco, pero lo vas a entender igual (y te vas a enamorar de lo rápido que vas a escribir).</span>
+            </p>
+            <div className="flex flex-col gap-2 bg-gradient-to-r from-purple-50 to-blue-50 rounded-lg px-5 py-4 shadow-inner">
+              <p className="flex items-center gap-2">
+                <span className="text-2xl">👉</span>
+                <span>
+                  <span className="font-semibold text-purple-700">¿Por qué?</span> Porque las abreviaciones no son errores, son atajos inteligentes.
+                </span>
+              </p>
+              <p>
+                lo q stas lyn2 aora msmo a primra vista parc 1 lio, n ralidad s 1 msj prfectamnt clr pa cualkier umano cn ganas d aorrar tiempo y spacio.
+              </p>
+            </div>
+            <ul className="flex flex-wrap gap-4 justify-center text-base md:text-lg mt-2">
+              <li className="bg-white border border-green-200 rounded-full px-4 py-1 shadow text-green-700 flex items-center gap-2">
+                <span className="text-green-500">✅</span> No son faltas de ortografía.
+              </li>
+              <li className="bg-white border border-blue-200 rounded-full px-4 py-1 shadow text-blue-700 flex items-center gap-2">
+                <span className="text-blue-500">✅</span> No son disparates.
+              </li>
+              <li className="bg-white border border-purple-200 rounded-full px-4 py-1 shadow text-purple-700 flex items-center gap-2">
+                <span className="text-purple-500">✅</span> Son SMS afilados, ligeros y totalmente comprensibles.
+              </li>
+            </ul>
+            <p className="flex items-center gap-2">
+              <span className="text-2xl">💬</span>
+              <span>
+                Es como <span className="font-semibold text-indigo-700">hablar rápido</span> pero que todos te entienden.
+              </span>
+            </p>
+            
+          </div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mt-8 italic">
+            Únete a los usuarios con el lema <span className="font-bold text-indigo-600">cada caracter cuesta</span>.
           </p>
         </div>
 
         {/* Download Links */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1qDIMSj7iee3mcGB7Ss4c1RxxvDwHyhnr/view?usp=sharing"
             className="group flex items-center space-x-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 min-w-[200px] justify-center"
           >
-            <Cloud size={24} className="group-hover:rotate-12 transition-transform duration-300" />
+            <DownloadIcon size={24} className="group-hover:rotate-12 transition-transform duration-300" />
             <div className="text-left">
               <div className="text-sm opacity-90">Descargar desde</div>
               <div className="text-lg font-semibold">Google Drive</div>
@@ -119,13 +163,13 @@ function App() {
           </a>
 
           <a
-            href="#"
+            href="https://github.com/mapm90/sms_shorter"
             className="group flex items-center space-x-4 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 min-w-[200px] justify-center"
           >
-            <Download size={24} className="group-hover:rotate-12 transition-transform duration-300" />
+            <Github size={24} className="group-hover:rotate-12 transition-transform duration-300" />
             <div className="text-left">
-              <div className="text-sm opacity-90">Descargar desde</div>
-              <div className="text-lg font-semibold">Mega</div>
+              <div className="text-sm opacity-90">Ver en </div>
+              <div className="text-lg font-semibold">Github</div>
             </div>
           </a>
         </div>
