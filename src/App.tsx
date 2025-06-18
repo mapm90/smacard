@@ -162,16 +162,7 @@ function App() {
             </div>
           </a>
 
-          <a
-            href="https://github.com/mapm90/sms_shorter"
-            className="group flex items-center space-x-4 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 min-w-[200px] justify-center"
-          >
-            <Github size={24} className="group-hover:rotate-12 transition-transform duration-300" />
-            <div className="text-left">
-              <div className="text-sm opacity-90">Ver en </div>
-              <div className="text-lg font-semibold">Github</div>
-            </div>
-          </a>
+          
         </div>
 
         {/* Subtle accent */}
