@@ -152,7 +152,7 @@ function App() {
         {/* Download Links */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <a
-            href="https://drive.google.com/file/d/1qDIMSj7iee3mcGB7Ss4c1RxxvDwHyhnr/view?usp=sharing"
+            href="https://drive.google.com/file/d/1JypqCjzH2kOSuT1PYF5H4qZsWn9KguIB/view?usp=sharing"
             className="group flex items-center space-x-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 min-w-[200px] justify-center"
           >
             <DownloadIcon size={24} className="group-hover:rotate-12 transition-transform duration-300" />
